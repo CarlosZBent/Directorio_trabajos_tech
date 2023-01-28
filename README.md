@@ -1,38 +1,26 @@
-# create-svelte
+# Directorio de trabajos tech del Gremio creativo.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Los empleos en la industria tetcnológica son altamente volátiles, y a pesar de la gran demanda de trabajadores, no es fácil encontrar trabajo.
+En este directorio podrás encontrar decenas de plataformas donde buscar tu próximo trabajo.
 
-## Creating a project
+## Contribuye a la comunidad:
+En el archivo `platforms.config.json` añade un nuevo par key-value en la categoría correcta. 
+Si es una plataforma para freelancing: dentro de `freelancing` puedes añadir de la siguiente forma `"nombre": "URL"`.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+Ejemplo: 
+```
+{
+    "freelancing" : {
+        "nombre1": "URL1",
+        "nombre2": "URL2",
+        "nombre3": "URL3"
+    }
+}
 ```
 
-## Developing
+Cada plataforma añadida se reflejará en su respectivo contenedor en la página.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Haz tuyo el directorio:
+esto apenas empieza, y no queremos que pare de crecer. Puedes hacer peticiones y recomendaciones de las siguientes formas:
+1. Abre un *issue* en este repositorio
+2. Comenta lo que tienes en mente en [este grupo de Telegram](https://t.me/CarlosZBent)
