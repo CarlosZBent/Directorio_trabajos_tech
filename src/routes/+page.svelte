@@ -1,6 +1,7 @@
 <script lang="ts">
 import Config from '../platforms.config.json'
 import Item from './Item.svelte';
+import InfoWidget from './InfoWidget.svelte';
 import {iterateJSONData} from '../helpers.js'
 
 // an iterable for each of the Config child objects
@@ -38,6 +39,9 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
         {/each}
     </div>
 </div>
+<div class="infoContainer m-auto w-[75%]">
+    <InfoWidget />
+</div>
 
 <style lang="postcss">
     :global(html) {
@@ -56,5 +60,12 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
             text-align: center;
 
         }
-            .item {}
+    .infoContainer {
+        border: 1px #cacaca solid;
+        border-radius: 5px;
+        margin-top: 5em;
+        margin-bottom: 2em;
+        padding: 1em;
+        background-color: theme(colors.gray.200);
+    }
 </style>

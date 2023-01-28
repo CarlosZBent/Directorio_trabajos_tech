@@ -21,6 +21,6 @@ Ejemplo:
 Cada plataforma añadida se reflejará en su respectivo contenedor en la página.
 
 ## Haz tuyo el directorio:
-esto apenas empieza, y no queremos que pare de crecer. Puedes hacer peticiones y recomendaciones de las siguientes formas:
+Esto apenas empieza, y no queremos que pare de crecer. Puedes hacer peticiones y recomendaciones de las siguientes formas:
 1. Abre un *issue* en este repositorio
 2. Comenta lo que tienes en mente en [este grupo de Telegram](https://t.me/CarlosZBent)
