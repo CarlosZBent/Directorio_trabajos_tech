@@ -1,7 +1,15 @@
 <script lang="ts">
 import Config from '../platforms.config.json'
 import Item from './Item.svelte';
+import {iterateJSONData} from '../helpers.js'
 
+let stringifiedConfigWork = JSON.stringify(Config.work)
+let parsedConfigWork = JSON.parse(stringifiedConfigWork)
+
+// let stringifiedConfigFreelancing = JSON.stringify(Config.freelancing)
+// let parsedConfigFreelancing = JSON.parse(stringifiedConfigFreelancing)
+
+let workInfo = iterateJSONData(Config.work)
 
 </script>
 
@@ -12,6 +20,10 @@ import Item from './Item.svelte';
     <div class="items-container">
        <h2 class="items-container-header"> Plataformas para trabajo </h2>
        <hr class="border-emerald-400 w-[85%] mx-auto my-2">
+        {#each workInfo as data}
+            <Item name={data.name} link={data.link} />
+            <hr>
+        {/each}
     </div>
     <div class="items-container">
        <h2 class="items-container-header"> Plataformas para freelancing </h2>
