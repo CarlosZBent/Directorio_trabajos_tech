@@ -3,6 +3,7 @@ import Config from '../platforms.config.json'
 import Item from './Item.svelte';
 import {iterateJSONData} from '../helpers.js'
 
+// an iterable for each of the Config child objects
 let workInfo = iterateJSONData(Config.work)
 let freelancingInfo = iterateJSONData(Config.freelancing)
 
