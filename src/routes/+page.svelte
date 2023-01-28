@@ -17,7 +17,11 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
        <h2 class="items-container-header"> Plataformas para trabajo </h2>
        <hr class="border-emerald-400 w-[85%] mx-auto my-2">
         {#each workInfo as data}
-            <Item name={data.name} link={data.link} />
+            <span class="item text-justify w-[90%]">
+                <Item
+                name={data.name} link={data.link} 
+                />
+            </span>
             <hr>
         {/each}
     </div>
@@ -25,7 +29,11 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
        <h2 class="items-container-header"> Plataformas para freelancing </h2>
        <hr class="border-emerald-400 w-[85%] mx-auto my-2">
        {#each freelancingInfo as data}
-            <Item name={data.name} link={data.link} />
+        <span class="item text-justify w-[90%]">
+                <Item
+                name={data.name} link={data.link} 
+                />
+            </span>
             <hr>
         {/each}
     </div>
@@ -42,9 +50,11 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
         min-height: 80px;
         border: 1px #cacaca solid;
         border-radius: 5px;
+        padding: 1em;
     }
         .items-container-header {
             text-align: center;
 
         }
+            .item {}
 </style>
