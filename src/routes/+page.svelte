@@ -13,8 +13,8 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
 <h1 class="text-center mx-auto my-5 text-2xl font-sans" > Directorio de trabajos tech de Gremio Creativo ✍ </h1>
 <hr class="border-emerald-400 w-[75%] m-auto" />
 
-<div class="flex justify-evenly mx-auto my-5 w-[75%]">
-    <div class="items-container">
+<div class="flex flex-wrap justify-evenly mx-auto my-5 w-[75%]">
+    <div class="items-container w-[80%] min-w-fit md:w-[45%] my-2">
        <h2 class="items-container-header"> Plataformas para trabajo </h2>
        <hr class="border-emerald-400 w-[85%] mx-auto my-2">
         {#each workInfo as data}
@@ -26,7 +26,7 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
             <hr>
         {/each}
     </div>
-    <div class="items-container">
+    <div class="items-container w-[80%] min-w-fit md:w-[45%] my-2">
        <h2 class="items-container-header"> Plataformas para freelancing </h2>
        <hr class="border-emerald-400 w-[85%] mx-auto my-2">
        {#each freelancingInfo as data}
@@ -48,8 +48,8 @@ let freelancingInfo = iterateJSONData(Config.freelancing)
         background-color: theme(colors.gray.100);
     }
     .items-container {
-        width: 45%;
-        min-width: 35%;
+        /* max-width: 55%;
+        min-width: fit-content; */
         height: fit-content;
         min-height: 80px;
         border: 1px #cacaca solid;
