@@ -17,7 +17,12 @@
         border: 1px #cacaca solid;
         border-radius: 5px;
         padding: 1em;
+        /* hiding the scrollbar */
+        scrollbar-width: none;
     }
+    .items-container::-webkit-scrollbar {
+            display: none;
+        }
         .items-container-header {
             text-align: center;
 
