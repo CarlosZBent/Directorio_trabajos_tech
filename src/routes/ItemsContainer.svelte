@@ -2,7 +2,7 @@
     export let title: string
 </script>
 
-<div class="items-container overflow-x-scroll w-full sm:w-[90%] sm:min-w-[40%] md:w-[45%] my-2">
+<div class="items-container overflow-x-scroll max-h-[25em] w-full sm:w-[90%] sm:min-w-[40%] md:w-[45%] my-2">
     <h2 class="items-container-header"> {title} </h2>
     <hr class="border-emerald-400 w-[85%] mx-auto my-2">
     <slot />
