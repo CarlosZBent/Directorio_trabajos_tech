@@ -1,7 +1,38 @@
+<script lang="ts">
+import Config from '../platforms.config.json'
+import Item from './Item.svelte';
+
+
+</script>
+
 <h1 class="text-center mx-auto my-5 text-2xl font-sans" > Directorio de trabajos tech de Gremio Creativo ✍ </h1>
 <hr class="border-emerald-400 w-[75%] m-auto" />
 
+<div class="flex justify-evenly mx-auto my-5 w-[75%]">
+    <div class="items-container">
+       <h2 class="items-container-header"> Plataformas para trabajo </h2>
+       <hr class="border-emerald-400 w-[85%] mx-auto my-2">
+    </div>
+    <div class="items-container">
+       <h2 class="items-container-header"> Plataformas para freelancing </h2>
+       <hr class="border-emerald-400 w-[85%] mx-auto my-2">
+    </div>
+</div>
 
-<script>
+<style lang="postcss">
+    :global(html) {
+        background-color: theme(colors.gray.100);
+    }
+    .items-container {
+        width: 45%;
+        min-width: 35%;
+        height: fit-content;
+        min-height: 80px;
+        border: 1px #cacaca solid;
+        border-radius: 5px;
+    }
+        .items-container-header {
+            text-align: center;
 
-</script>
+        }
+</style>
