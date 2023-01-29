@@ -12,6 +12,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",
+		"@types/mixpanel-browser": "^2.38.1",
 		"autoprefixer": "^10.4.13",
 		"postcss": "^8.4.21",
 		"svelte": "^3.54.0",
