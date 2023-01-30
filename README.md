@@ -1,6 +1,6 @@
 # Directorio de trabajos tech del Gremio creativo.
 
-Los empleos en la industria tetcnológica son altamente volátiles, y a pesar de la gran demanda de trabajadores, no es fácil encontrar trabajo.
+Los empleos en la industria tecnológica son altamente volátiles, y a pesar de la gran demanda de trabajadores, no es fácil encontrar trabajo.
 En este directorio podrás encontrar decenas de plataformas donde buscar tu próximo trabajo.
 
 ## Contribuye a la comunidad:
