@@ -4,7 +4,9 @@
         "Upwork": "https://upwork.com",
         "Freelancer": "https://www.freelancer.com/",
         "Toptal": "https://www.toptal.com/",
-        "WWR": "https://weworkremotely.com/"
+        "WWR": "https://weworkremotely.com/",
+        "Foro Salvaje": "https://forosalvaje.com/categorias/bolsa-de-empleo.56/",
+        "ForoBeta": "https://forobeta.com/categories/servicios.462/"
     },
     "work": {
         "Dynamite Jobs": "https://dynamitejobs.com",
@@ -18,6 +20,8 @@
         "Hireline": "https://hireline.io/mx",
         "Talently": "https://talently.tech/",
         "GetOnBoard": "https://www.getonbrd.com/webpros/login",
-        "InfoJobs":"https://www.infojobs.net/"
+        "InfoJobs":"https://www.infojobs.net/",
+        "LinkedIn": "https://www.linkedin.com/jobs/",
+        "Trabajos diarios": "https://trabajosdiarios.com/"
     }
 }
