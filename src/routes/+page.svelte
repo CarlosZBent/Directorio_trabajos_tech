@@ -1,27 +1,17 @@
 <script lang="ts">
-import mixpanel from 'mixpanel-browser';
-
 import Config from '../platforms.config.json'
 import ItemsContainer from './ItemsContainer.svelte';
 import Item from './Item.svelte';
 import InfoWidget from './InfoWidget.svelte';
+
 import {iterateJSONData} from '../helpers.js'
+import { mixpanelWebsiteVisit } from '../analytics';
 
 interface MixpanelDataObject {
     id:string
 }
-
 export let data:MixpanelDataObject;
-
 let mixpanel_id = data.id
-
-
-function mixpanelWebsiteVisit (node:HTMLElement, id:string) {
-    if (node) {
-        mixpanel.init(String(id))
-        mixpanel.track('Webiste visit')
-    }
-}
 
 // an iterable for each of the Config child objects
 let workInfo = iterateJSONData(Config.work)
