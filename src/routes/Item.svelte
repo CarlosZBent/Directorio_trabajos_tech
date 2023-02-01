@@ -1,16 +1,29 @@
 <script lang="ts">
-    export let name: string
-    export let link: string
+  export let name: string;
+  export let link: string;
 </script>
 
-<h1 class="my-2 font-semibold" >
-    {name}
-</h1>
-<a class="block my-2 underline decoration-emerald-700 hover:decoration-red-500" 
-href={link} target="_blank rel=noreferrer">
-    {link}
-</a>
+<div
+  class="flex flex-auto flex-row dark:bg-slate-800 bg-white shadow hover:shadow-xl hover:transition-all rounded-xl p-3"
+>
+  <a
+    href={link}
+    target="_blank rel=noreferrer"
+    class="flex flex-auto my-auto gap-2 overflow-hidden"
+  >
+    <img
+      class="h-8 my-auto dark:text-white bg-white dark:bg-slate-800 rounded"
+      src={"http://visiting-chocolate-meerkat.faviconkit.com/" +
+        link.replace("https://", "") +
+        "/48"}
+      alt="fav-icon"
+    />
+
+    <h1 class="my-2 font-semibold ml-auto dark:text-white ">
+      {name}
+    </h1>
+  </a>
+</div>
 
 <style lang="postcss">
-
 </style>
