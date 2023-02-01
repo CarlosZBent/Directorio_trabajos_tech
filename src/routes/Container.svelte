@@ -32,20 +32,7 @@
   .new-container::-webkit-scrollbar {
     display: none;
   }
-  .items-container {
-    /* max-width: 55%;
-        min-width: fit-content; */
-    height: fit-content;
-    min-height: 80px;
-    border-bottom: 1px #3f3f3f solid;
-    /* border-radius: 5px; */
-    padding: 1em;
-    /* hiding the scrollbar */
-    scrollbar-width: none;
-  }
-  .items-container::-webkit-scrollbar {
-    display: none;
-  }
+
   .items-container-header {
     text-align: center;
   }
