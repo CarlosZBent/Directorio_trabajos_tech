@@ -4,7 +4,8 @@
         "Upwork": "https://upwork.com",
         "Freelancer": "https://www.freelancer.com/",
         "Toptal": "https://www.toptal.com/",
-        "WWR": "https://weworkremotely.com/"
+        "WWR": "https://weworkremotely.com/",
+        "Freemance": "https://freemance.com/"
     },
     "work": {
         "Dynamite Jobs": "https://dynamitejobs.com",
@@ -18,6 +19,9 @@
         "Hireline": "https://hireline.io/mx",
         "Talently": "https://talently.tech/",
         "GetOnBoard": "https://www.getonbrd.com/webpros/login",
-        "InfoJobs":"https://www.infojobs.net/"
+        "InfoJobs": "https://www.infojobs.net/",
+        "Arc": "https://arc.dev",
+        "Michael Page": "https://www.michaelpage.es/",
+        "Cuban Engineer": "https://odoo.aleph.engineering/jobs"
     }
 }
