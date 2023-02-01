@@ -18,8 +18,8 @@
     let freelancingInfo = iterateJSONData(Config.freelancing)
 </script>
 
-<h1 class="text-center mx-auto mb-5 mt-10 text-4xl font-Cinzel" use:mixpanelWebsiteVisit={mixpanel_id} > Directorio de trabajos tech </h1>
-<h2 class="text-center my-4 font-sans text-lg mx-5">¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para que encuentres tu próximo empleo</h2>
+<h1 class="text-center mx-auto mb-5 mt-10 text-4xl font-[Garet]" use:mixpanelWebsiteVisit={mixpanel_id} > Directorio de trabajos tech </h1>
+<h2 class="text-center my-4 font-[Montserrat] text-lg mx-5">¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para que encuentres tu próximo empleo</h2>
 <hr class="border-emerald-400 w-[75%] m-auto" />
 
 <div class="flex flex-wrap justify-evenly mx-auto my-5 w-11/12 md:w-3/4">

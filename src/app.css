@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Cinzel;
-    src: url('./CinzelDecorative-Regular.ttf');
+    font-family: Garet;
+    src: url('./Garet-Book.ttf');
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('./Montserrat-Regular.ttf');
+}
+
+body {
+    font-family: Montserrat;
 }
