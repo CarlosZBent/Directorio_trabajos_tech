@@ -23,8 +23,8 @@
 <hr class="border-emerald-400 w-[75%] m-auto" />
 
 <div class="flex flex-wrap justify-evenly mx-auto my-5 w-11/12 md:w-3/4">
-    <Container title="Plataformas para trabajo" data={workInfo} />
-    <Container title="Plataformas para freelancing" data={freelancingInfo} />
+    <Container title="Plataformas para trabajo" data={workInfo} amount={workInfo.length} />
+    <Container title="Plataformas para freelancing" data={freelancingInfo} amount={freelancingInfo.length} />
 </div>
 
 <div class="infoContainer m-auto w-11/12 md:w-3/4">
