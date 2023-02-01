@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="flex flex-auto flex-row dark:bg-slate-800 bg-gray-100 shadow hover:shadow-xl hover:transition-all rounded-xl p-3"
+  class="flex flex-auto flex-row dark:bg-slate-800 bg-white shadow hover:shadow-xl hover:transition-all rounded-xl p-3"
 >
   <a
     href={link}
@@ -12,7 +12,7 @@
     class="flex flex-auto my-auto gap-2 overflow-hidden"
   >
     <img
-      class="h-8 my-auto dark:text-white bg-gray-100 dark:bg-slate-800 rounded"
+      class="h-8 my-auto dark:text-white bg-white dark:bg-slate-800 rounded"
       src={"http://visiting-chocolate-meerkat.faviconkit.com/" +
         link.replace("https://", "") +
         "/48"}

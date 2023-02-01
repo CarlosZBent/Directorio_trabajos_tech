@@ -18,7 +18,7 @@
   let freelancingInfo = iterateJSONData(Config.freelancing);
 </script>
 
-<div class="flex flex-auto flex-col bg-white dark:bg-gray-900">
+<div class="flex flex-auto flex-col bg-gray-200/30 dark:bg-gray-900">
   <h1
     class="text-center mx-auto mb-5 mt-10 lg:text-5xl md:text-4xl text-4xl font-bold font-[Garet] dark:text-white"
     use:mixpanelWebsiteVisit={mixpanel_id}
