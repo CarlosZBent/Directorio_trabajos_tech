@@ -26,7 +26,7 @@
     <Container title="Plataformas para freelancing" data={freelancingInfo} amount={freelancingInfo.length} />
 </div>
 
-<div class="flex flex-row mx-12"> 
+<div class="flex flex-row bg-gray-100 mt-2 p-6"> 
     <InfoWidget />
 </div>
 
