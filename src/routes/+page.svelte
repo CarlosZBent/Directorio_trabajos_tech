@@ -46,9 +46,7 @@
     />
   </div>
 
-  <div
-    class="flex flex-row flex-auto overflow-hidden bg-gray-100 mt-6 p-6 dark:bg-gray-900/25"
-  >
+  <div class="flex flex-row flex-auto overflow-hidden bg-gray-100 mt-6 p-6 dark:bg-gray-900/25" >
     <InfoWidget />
   </div>
 </div>
@@ -58,13 +56,12 @@
         /* background-color: theme(colors.gray.100); */
         /* background-color: black; */
     }
-    .infoContainer {
+    /* .infoContainer {
         border: 1px #cacaca solid;
         border-radius: 5px;
         margin-top: 5em;
         margin-bottom: 2em;
         padding: 1em;
-        /* background-color: theme(colors.gray.200); */
-        background-color: theme(colors.gray.900);
-    }
+        /* background-color: theme(colors.gray.200);
+    } */
 </style>

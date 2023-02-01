@@ -11,14 +11,13 @@
   export let data: Platform[];
 </script>
 
-<div class="flex flex-auto flex-col gap-1 overflow-x-scroll max-h-[40em] w-full sm:w-[90%] sm:min-w-[40%] md:w-[45%] my-2"
->
+<div class="main-container flex flex-auto flex-col gap-1 overflow-x-scroll max-h-[40em] w-full sm:w-[90%] sm:min-w-[40%] md:w-[45%] my-2">
   <h2 class="items-container-header flex-1 dark:text-white select-none">
     {title} ({amount})
   </h2>
   <hr class="border-emerald-400 w-[85%] mx-auto my-2 dark:border-emerald-800">
 
-  <div class="new-container flex flex-auto flex-col h-96 overflow-auto gap-2">
+  <div class="item-container flex flex-auto flex-col h-96 gap-2">
 
     {#each data as data}
       <span class="item text-justify">
@@ -29,7 +28,11 @@
 </div>
 
 <style>
-  .new-container::-webkit-scrollbar {
+  .main-container {
+    scrollbar-width: none;
+    border-bottom: .5px solid rgb(111, 111, 111);
+  }
+  .main-container::-webkit-scrollbar {
     display: none;
   }
   .items-container-header {

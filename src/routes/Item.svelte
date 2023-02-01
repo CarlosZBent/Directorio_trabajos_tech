@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="flex flex-auto flex-row dark:bg-slate-800 bg-white shadow hover:shadow-xl hover:transition-all rounded-xl p-3"
+  class="flex flex-auto flex-row dark:bg-slate-800 bg-white shadow rounded-md p-3"
 >
   <a
     href={link}
