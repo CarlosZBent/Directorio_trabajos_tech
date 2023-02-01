@@ -1,6 +1,4 @@
 <script lang="ts">
-    import mixpanel from 'mixpanel-browser';
-
     import Config from '../platforms.config.json'
     import InfoWidget from './InfoWidget.svelte';
     import {iterateJSONData} from '../helpers.js'
