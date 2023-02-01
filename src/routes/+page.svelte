@@ -18,22 +18,25 @@
     let freelancingInfo = iterateJSONData(Config.freelancing)
 </script>
 
-<h1 class="text-center mx-auto mb-5 mt-10 text-4xl font-[Garet]" use:mixpanelWebsiteVisit={mixpanel_id} > Directorio de trabajos tech </h1>
-<h2 class="text-center my-4 font-[Montserrat] text-lg mx-5">¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para que encuentres tu próximo empleo</h2>
-<hr class="border-emerald-400 w-[75%] m-auto" />
+<div class="dark:text-white">
+  <h1 class="text-center mx-auto mb-5 mt-10 text-4xl font-[Garet]" use:mixpanelWebsiteVisit={mixpanel_id} > Directorio de trabajos tech </h1>
+  <h2 class="text-center my-4 font-[Montserrat] text-lg mx-5">¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para que encuentres tu próximo empleo</h2>
+  <hr class="border-emerald-400 dark:border-emerald-800 w-[75%] m-auto" />
 
-<div class="flex flex-wrap justify-evenly mx-auto my-5 w-11/12 md:w-3/4">
-    <Container title="Plataformas para trabajo" data={workInfo} amount={workInfo.length} />
-    <Container title="Plataformas para freelancing" data={freelancingInfo} amount={freelancingInfo.length} />
-</div>
+  <div class="flex flex-wrap justify-evenly mx-auto my-5 w-11/12 md:w-3/4 dark:text-gray-100">
+      <Container title="Plataformas para trabajo" data={workInfo} amount={workInfo.length} />
+      <Container title="Plataformas para freelancing" data={freelancingInfo} amount={freelancingInfo.length} />
+  </div>
 
-<div class="infoContainer m-auto w-11/12 md:w-3/4">
-    <InfoWidget />
+  <div class="infoContainer m-auto w-11/12 md:w-3/4">
+      <InfoWidget />
+  </div>
 </div>
 
 <style lang="postcss">
     :global(html) {
-        background-color: theme(colors.gray.100);
+        /* background-color: theme(colors.gray.100); */
+        background-color: black;
     }
     .infoContainer {
         border: 1px #cacaca solid;
@@ -41,6 +44,7 @@
         margin-top: 5em;
         margin-bottom: 2em;
         padding: 1em;
-        background-color: theme(colors.gray.200);
+        /* background-color: theme(colors.gray.200); */
+        background-color: theme(colors.gray.900);
     }
 </style>
