@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/63693b79-84a8-4cc6-9cdb-51feff097f39/deploy-status)](https://app.netlify.com/sites/brilliant-frangollo-cc0d5e/deploys)
+***
 # Directorio de trabajos tech del Gremio creativo.
 
 Los empleos en la industria tecnológica son altamente volátiles, y a pesar de la gran demanda de trabajadores, no es fácil encontrar trabajo.
