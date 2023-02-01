@@ -52,3 +52,19 @@
     <InfoWidget />
   </div>
 </div>
+
+<style lang="postcss">
+    :global(html) {
+        /* background-color: theme(colors.gray.100); */
+        /* background-color: black; */
+    }
+    .infoContainer {
+        border: 1px #cacaca solid;
+        border-radius: 5px;
+        margin-top: 5em;
+        margin-bottom: 2em;
+        padding: 1em;
+        /* background-color: theme(colors.gray.200); */
+        background-color: theme(colors.gray.900);
+    }
+</style>
