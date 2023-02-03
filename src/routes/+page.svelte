@@ -17,6 +17,7 @@
   let workInfo = iterateJSONData(Config.work);
   let freelancingInfo = iterateJSONData(Config.freelancing);
   let twitterInfo = iterateJSONData(Config.twitter);
+  let telegramInfo = iterateJSONData(Config.telegram);
 </script>
 
 <div class="flex flex-auto flex-col bg-gray-200/30 dark:bg-gray-900">
@@ -51,6 +52,11 @@
       title="Cuentas de Twitter"
       data={twitterInfo}
       amount={twitterInfo.length}
+    />
+    <Container 
+      title="Canales de Telegram"
+      data={telegramInfo}
+      amount={telegramInfo.length}
     />
   </div>
 
