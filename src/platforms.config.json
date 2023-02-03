@@ -28,5 +28,10 @@
         "Arc": "https://arc.dev",
         "Michael Page": "https://www.michaelpage.es/",
         "Cuban Engineer": "https://odoo.aleph.engineering/jobs"
+    },
+    "twitter": {
+        "Hirelineio": "https://twitter.com/hirelineio/status/1619334575456505857?s=09",
+        "TEST": "TEST",
+        "TEST2": "TEST2"
     }
 }

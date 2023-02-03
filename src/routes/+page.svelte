@@ -16,6 +16,7 @@
   // an iterable for each of the Config child objects
   let workInfo = iterateJSONData(Config.work);
   let freelancingInfo = iterateJSONData(Config.freelancing);
+  let twitterInfo = iterateJSONData(Config.twitter);
 </script>
 
 <div class="flex flex-auto flex-col bg-gray-200/30 dark:bg-gray-900">
@@ -43,6 +44,13 @@
       title="Plataformas para freelancing"
       data={freelancingInfo}
       amount={freelancingInfo.length}
+    />
+  </div>
+  <div class="flex flex-auto md:flex-row flex-col mx-6 md:mx-20 gap-2">
+    <Container 
+      title="Cuentas de Twitter"
+      data={twitterInfo}
+      amount={twitterInfo.length}
     />
   </div>
 
