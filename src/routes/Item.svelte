@@ -19,9 +19,9 @@
       alt="fav-icon"
     />
 
-    <h1 class="my-2 font-semibold ml-auto dark:text-white ">
+    <h3 class="my-2 font-semibold ml-auto dark:text-white ">
       {name}
-    </h1>
+    </h3>
   </a>
 </div>
 
