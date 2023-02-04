@@ -16,15 +16,26 @@
     {title} ({amount})
   </h2>
   <hr class="border-emerald-400 w-[85%] mx-auto my-2 dark:border-emerald-800">
-
+  
   <div class="item-container flex flex-auto flex-col h-96 gap-2">
-
-    {#each data as data}
+    {#if amount==0}
+    <span class="w-3/4 m-auto shadow-lg rounded-md mb-52 dark:bg-slate-800 bg-white p-5 py-6 dark:text-white">
+      <p>
+        Mmm, todavía no tenemos plataformas en esta sección.
+        <br>
+        ¿Por qué no <a href="#repo-link" class="link text-slate-400" >añadir una</a>?
+      </p>
+    </span>
+    {:else}
+      {#each data as data}
       <span class="item text-justify">
         <Item name={data.name} link={data.link} />
       </span>
-    {/each}
+      {/each}
+    {/if}
   </div>
+  
+
 </div>
 
 <style>
@@ -37,5 +48,8 @@
   }
   .items-container-header {
     text-align: center;
+  }
+  .link {
+    text-decoration: underline;
   }
 </style>

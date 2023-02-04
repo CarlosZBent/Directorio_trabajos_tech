@@ -70,7 +70,7 @@
       peticiones y recomendaciones de las siguientes formas:
     </p>
     <ol class="text-xs">
-      <li class="text-gray-600">
+      <li id="repo-link" class="text-gray-600">
         1. Abre un <i>issue</i> en
         <a
           class="underline decoration-emerald-700 text-gray-500"
