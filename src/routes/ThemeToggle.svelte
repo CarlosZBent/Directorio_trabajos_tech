@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { enhance, type SubmitFunction } from "$app/forms";
+    import { enhance } from "$app/forms";
 
     export let theme: string;
 </script>
@@ -7,8 +7,8 @@
 <div class="absolute top-5 right-5">
     <form method="POST" use:enhance>
         {#if theme === "dark"}
-            <button formaction="?/setTheme&theme=light"
-                ><!-- Sun Icon -->
+            <button formaction="?/setTheme&theme=light">
+                <!-- Sun Icon -->
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
