@@ -11,7 +11,7 @@
   export let data: Platform[];
 </script>
 
-<div class="main-container flex flex-auto flex-col gap-1 overflow-x-scroll max-h-[40em] w-full sm:w-[90%] sm:min-w-[40%] md:w-[45%] my-2">
+<div class="main-container flex flex-auto flex-col gap-1 overflow-x-scroll max-h-[40em] w-full sm:min-w-[40%] md:w-[40%] my-2">
   <h2 class="items-container-header flex-1 dark:text-white select-none">
     {title} ({amount})
   </h2>
