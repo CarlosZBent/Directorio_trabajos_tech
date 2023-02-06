@@ -42,8 +42,13 @@
         "Platzi": "https://platzi.com/empleos/"
     },
     "twitter": {
-        "Hirelineio": "https://twitter.com/hirelineio/status/1619334575456505857?s=09"
+        "Hirelineio": "https://twitter.com/hirelineio"
     },
     "telegram": {
+        "Cuban Tech Jobs": "https://t.me/cubanjobs",
+        "Cuba CompuJobs": "https://t.me/cubacyberjobs",
+        "manfred": "https://t.me/getmanfred",
+        "Empleos Tech": "https://t.me/empleostech",
+        "Relocate.me": "https://t.me/relocateme"
         }
 }
