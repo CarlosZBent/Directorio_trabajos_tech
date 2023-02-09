@@ -1,9 +1,12 @@
 <script lang="ts">
   import Config from "../platforms.config.json";
+  
   import InfoWidget from "./InfoWidget.svelte";
+  import Container from "./Container.svelte";
+  import SocialLinkContainer from "./SocialLinkContainer.svelte";
+  
   import { iterateJSONData } from "../helpers.js";
   import { mixpanelWebsiteVisit } from "../analytics";
-  import Container from "./Container.svelte";
 
   interface MixpanelDataObject {
     id: string;
@@ -22,18 +25,20 @@
 
 <div class="flex flex-auto flex-col bg-gray-200/30 dark:bg-gray-900">
   <h1
-    class="text-center mx-auto mb-5 mt-10 lg:text-5xl md:text-4xl text-4xl font-bold font-[Garet] dark:text-white"
+    class="text-center mx-auto mb-5 mt-16 lg:text-5xl md:text-4xl text-4xl font-bold font-[Garet] dark:text-white"
     use:mixpanelWebsiteVisit={mixpanel_id}
   >
     Directorio de trabajos tech
   </h1>
-
+  
   <h2
-    class="text-center my-4 font-[Montserrat] text-lg mx-5 text-gray-500 mb-8"
+  class="text-center my-4 font-[Montserrat] text-xl mx-5 text-gray-500 mb-8"
   >
-    ¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para
-    que encuentres tu próximo empleo
-  </h2>
+  ¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para
+  que encuentres tu próximo empleo
+</h2>
+
+<SocialLinkContainer />
 
   <div class="flex flex-auto md:flex-row flex-col mx-6 md:mx-20 gap-2">
     <Container
