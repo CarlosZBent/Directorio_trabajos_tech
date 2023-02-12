@@ -1,9 +1,11 @@
 <script lang="ts">
   import Config from "../platforms.config.json";
+  import { activeSection } from "../stores";
   
   import InfoWidget from "./InfoWidget.svelte";
   import Container from "./Container.svelte";
   import SocialLinkContainer from "./SocialLinkContainer.svelte";
+  import SideBar from "./SideBar/SideBar.svelte";
   
   import { iterateJSONData } from "../helpers.js";
   import { mixpanelWebsiteVisit } from "../analytics";
@@ -29,6 +31,7 @@
     use:mixpanelWebsiteVisit={mixpanel_id}
   >
     Directorio de trabajos tech
+    { $activeSection }
   </h1>
   
   <h2
@@ -39,8 +42,9 @@
 </h2>
 
 <SocialLinkContainer />
+<SideBar />
 
-  <div class="flex flex-auto md:flex-row flex-col mx-6 md:mx-20 gap-2">
+  <div class="mx-auto md:mx-20 gap-2">
     <Container
       title="Plataformas para trabajo"
       data={workInfo}
@@ -51,8 +55,6 @@
       data={freelancingInfo}
       amount={freelancingInfo.length}
     />
-  </div>
-  <div class="flex flex-auto md:flex-row flex-col mx-6 md:mx-20 gap-2">
     <Container 
       title="Cuentas de Twitter"
       data={twitterInfo}
