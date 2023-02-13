@@ -18,12 +18,6 @@
 
   let mixpanel_id = data.id;
 
-  // an iterable for each of the Config child objects
-  // let workInfo = iterateJSONData(Config.work);
-  // let freelancingInfo = iterateJSONData(Config.freelancing);
-  // let twitterInfo = iterateJSONData(Config.twitter);
-  // let telegramInfo = iterateJSONData(Config.telegram);
-
   let sectionLookup = {
     "Plataformas para trabajo": iterateJSONData(Config.work),
     "Plataformas para freelancing": iterateJSONData(Config.freelancing),
@@ -51,7 +45,7 @@
 <SocialLinkContainer />
 <SideBar />
 
-  <div class="mx-auto md:mx-20 gap-2">}
+  <div class="mx-auto md:mx-20 gap-2">
     <Container
       title={ $activeSection }
       data={ sectionLookup[ getKeyOfObj($activeSection, sectionLookup) ] }
