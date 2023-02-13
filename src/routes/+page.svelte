@@ -7,7 +7,7 @@
   import SocialLinkContainer from "./SocialLinkContainer.svelte";
   import SideBar from "./SideBar/SideBar.svelte";
   
-  import { iterateJSONData } from "../helpers.js";
+  import { iterateJSONData, getKeyOfObj } from "../helpers.js";
   import { mixpanelWebsiteVisit } from "../analytics";
 
   interface MixpanelDataObject {
@@ -19,10 +19,18 @@
   let mixpanel_id = data.id;
 
   // an iterable for each of the Config child objects
-  let workInfo = iterateJSONData(Config.work);
-  let freelancingInfo = iterateJSONData(Config.freelancing);
-  let twitterInfo = iterateJSONData(Config.twitter);
-  let telegramInfo = iterateJSONData(Config.telegram);
+  // let workInfo = iterateJSONData(Config.work);
+  // let freelancingInfo = iterateJSONData(Config.freelancing);
+  // let twitterInfo = iterateJSONData(Config.twitter);
+  // let telegramInfo = iterateJSONData(Config.telegram);
+
+  let sectionLookup = {
+    "Plataformas para trabajo": iterateJSONData(Config.work),
+    "Plataformas para freelancing": iterateJSONData(Config.freelancing),
+    "Cuentas de Twitter": iterateJSONData(Config.twitter),
+    "Canales y grupos de Telegram": iterateJSONData(Config.telegram)
+  }
+
 </script>
 
 <div class="flex flex-auto flex-col bg-gray-200/30 dark:bg-gray-900">
@@ -31,7 +39,6 @@
     use:mixpanelWebsiteVisit={mixpanel_id}
   >
     Directorio de trabajos tech
-    { $activeSection }
   </h1>
   
   <h2
@@ -44,27 +51,13 @@
 <SocialLinkContainer />
 <SideBar />
 
-  <div class="mx-auto md:mx-20 gap-2">
+  <div class="mx-auto md:mx-20 gap-2">}
     <Container
-      title="Plataformas para trabajo"
-      data={workInfo}
-      amount={workInfo.length}
+      title={ $activeSection }
+      data={ sectionLookup[ getKeyOfObj($activeSection, sectionLookup) ] }
+      amount={ sectionLookup[ getKeyOfObj($activeSection, sectionLookup) ].length }
     />
-    <Container
-      title="Plataformas para freelancing"
-      data={freelancingInfo}
-      amount={freelancingInfo.length}
-    />
-    <Container 
-      title="Cuentas de Twitter"
-      data={twitterInfo}
-      amount={twitterInfo.length}
-    />
-    <Container 
-      title="Canales de Telegram"
-      data={telegramInfo}
-      amount={telegramInfo.length}
-    />
+
   </div>
 
   <div class="flex flex-row flex-auto overflow-hidden bg-gray-100 mt-6 p-6 dark:bg-gray-900/25" >

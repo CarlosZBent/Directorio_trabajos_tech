@@ -12,7 +12,7 @@
 </script>
 
 <a 
-    href="{url}#trabajo" class="nav-link decoration-emerald-700 bg-slate-100 hover:bg-slate-300 hover:decoration-blue-900 block w-full p-1 text-center my-2"
+    href="{url}" class="nav-link decoration-emerald-700 bg-slate-100 hover:bg-slate-300 hover:decoration-blue-900 block w-full p-1 text-center my-2"
     on:click={()=> updateActiveSection(section)}
 >    
     {name}

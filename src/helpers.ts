@@ -6,7 +6,7 @@ interface ItemObject {
     link: any
 }
 
-function iterateJSONData (obj: Object) {
+export function iterateJSONData (obj: Object) {
     let data = []
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
@@ -26,4 +26,11 @@ function iterateJSONData (obj: Object) {
     return data
 }
 
-export {iterateJSONData}
+export function getKeyOfObj (key:string, obj:Object) {
+    for (let keyItem in obj) {
+      if (obj.hasOwnProperty(keyItem)) {
+        if (keyItem == key)
+          return keyItem
+    }
+  }
+}
