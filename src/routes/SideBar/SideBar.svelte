@@ -13,10 +13,10 @@
     <aside class="nav-widget border-0 w-56 bg-slate-100 dark:bg-slate-800 dark:text-white py-2 block">
         <h2 class="text-center" >Tipo de plataforma</h2>
         <hr class="my-3 mx-auto w-[85%] border-slate-600 dark:border-slate-200" >
-        <SideBarLink url="localhost:5173/" name="Trabajo" section="Plataformas para trabajo"/>
-        <SideBarLink url="localhost:5173/" name="Freelancing"  section="Plataformas para freelancing"/>
-        <SideBarLink url="localhost:5173/" name="Twitter"  section="Cuentas de Twitter"/>
-        <SideBarLink url="localhost:5173/" name="Telegram"  section="Canales y grupos de Telegram"/>
+        <SideBarLink url="" name="Trabajo" section="Plataformas para trabajo"/>
+        <SideBarLink url="" name="Freelancing"  section="Plataformas para freelancing"/>
+        <SideBarLink url="" name="Twitter"  section="Cuentas de Twitter"/>
+        <SideBarLink url="" name="Telegram"  section="Canales y grupos de Telegram"/>
         
     </aside>
     
