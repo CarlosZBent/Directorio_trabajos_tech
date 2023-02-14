@@ -24,7 +24,7 @@
         on:focus={ ()=> containerLeft = "0rem"} 
         on:mouseleave={ ()=> containerLeft = "-14.5rem"} 
         xmlns="http://www.w3.org/2000/svg" 
-        class="icon icon-tabler icon-tabler-triangle my-auto mx-auto" 
+        class="icon icon-tabler icon-tabler-triangle my-auto mx-auto dark:text-slate-300" 
         width="24" 
         height="24" 
         viewBox="0 0 24 24" 
@@ -42,5 +42,6 @@
 <style lang="postcss">
     svg {
         transform: rotate(90deg);
+        
     }
 </style>
