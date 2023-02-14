@@ -1,13 +1,14 @@
 <script lang="ts">
     import SideBarLink from "./SideBarLink.svelte";
 
-    let containerLeft = "-14.5rem"
+    var containerLeft:string = "-14.5rem"
+    var toggleRotation:string = "90deg"
 </script>
 
 <div class="flex p-0 bg-none absolute top-56 w-[17rem]" 
-    on:mouseover={ ()=> containerLeft = "0rem"} 
-    on:focus={ ()=> containerLeft = "0rem"} 
-    on:mouseleave={ ()=> containerLeft = "-14.5rem"} 
+    on:mouseover={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
+    on:focus={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
+    on:mouseleave={ ()=> {containerLeft = "-14.5rem"; toggleRotation="90deg"}} 
     style="left:{containerLeft}">
     <aside class="nav-widget rounded-tr-md rounded-br-md border-0 w-56 border-slate-900 shadow-md shadow-slate-300 dark:shadow-slate-900  bg-slate-100 dark:bg-slate-800 dark:text-white py-2 block">
         <h2 class="text-center" >Tipo de plataforma</h2>
@@ -20,9 +21,8 @@
     </aside>
     
     <svg
-        on:mouseover={ ()=> containerLeft = "0rem"} 
-        on:focus={ ()=> containerLeft = "0rem"} 
-        on:mouseleave={ ()=> containerLeft = "-14.5rem"} 
+        on:mouseleave={ ()=> containerLeft = "-14.5rem"}
+        style="transform:rotate({toggleRotation})"
         xmlns="http://www.w3.org/2000/svg" 
         class="icon icon-tabler icon-tabler-triangle my-auto mx-auto dark:text-slate-300" 
         width="24" 
@@ -41,7 +41,7 @@
 
 <style lang="postcss">
     svg {
-        transform: rotate(90deg);
+        /* transform: rotate(90deg); */
         
     }
 </style>
