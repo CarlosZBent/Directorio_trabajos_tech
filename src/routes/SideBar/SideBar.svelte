@@ -5,12 +5,12 @@
     var toggleRotation:string = "90deg"
 </script>
 
-<div class="flex p-0 bg-none absolute top-56 w-[17rem]" 
+<div class="flex p-0 bg-slate-100 dark:bg-slate-800 absolute top-72 w-[17rem] transition-all duration-1200 ease-in-out shadow-md shadow-slate-300 dark:shadow-slate-900 rounded-tr-md rounded-br-md"
     on:mouseover={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
     on:focus={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
     on:mouseleave={ ()=> {containerLeft = "-14.5rem"; toggleRotation="90deg"}} 
     style="left:{containerLeft}">
-    <aside class="nav-widget rounded-tr-md rounded-br-md border-0 w-56 border-slate-900 shadow-md shadow-slate-300 dark:shadow-slate-900  bg-slate-100 dark:bg-slate-800 dark:text-white py-2 block">
+    <aside class="nav-widget border-0 w-56 bg-slate-100 dark:bg-slate-800 dark:text-white py-2 block">
         <h2 class="text-center" >Tipo de plataforma</h2>
         <hr class="my-3 mx-auto w-[85%] border-slate-600 dark:border-slate-200" >
         <SideBarLink url="localhost:5173/" name="Trabajo" section="Plataformas para trabajo"/>
@@ -21,10 +21,12 @@
     </aside>
     
     <svg
-        on:mouseleave={ ()=> containerLeft = "-14.5rem"}
+        on:mouseover={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
+        on:focus={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
+        on:mouseleave={ ()=> {containerLeft = "-14.5rem"; toggleRotation="90deg"}} 
         style="transform:rotate({toggleRotation})"
         xmlns="http://www.w3.org/2000/svg" 
-        class="icon icon-tabler icon-tabler-triangle my-auto mx-auto dark:text-slate-300" 
+        class="icon icon-tabler icon-tabler-triangle my-auto mx-auto dark:text-slate-300 transition duration-500 ease-in-out" 
         width="24" 
         height="24" 
         viewBox="0 0 24 24" 

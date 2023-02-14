@@ -1,8 +1,8 @@
-<div class="rounded-md w-32 sm:w-40 h-fit p-3 flex justify-evenly mx-auto mb-2 bg-slate-200 dark:bg-slate-700">
+<div class="rounded-md w-32 sm:w-40 h-fit p-3 flex justify-evenly mx-auto mb-2 bg-slate-100 dark:bg-slate-800">
     <a href="https://github.com/CarlosZBent/Directorio_trabajos_tech" target=__blank class="gh-icon">
         <svg 
         xmlns="http://www.w3.org/2000/svg" 
-        class="icon icon-tabler icon-tabler-brand-github " 
+        class="icon icon-tabler icon-tabler-brand-github dark:text-slate-300" 
         width="24" 
         height="24" 
         viewBox="0 0 24 24" 
@@ -20,7 +20,7 @@
     <a href="https://t.me/CarlosZBent" target=__blank class="tg-icon">
         <svg 
         xmlns="http://www.w3.org/2000/svg" 
-        class="icon icon-tabler icon-tabler-brand-telegram" 
+        class="icon icon-tabler icon-tabler-brand-telegram dark:text-slate-300"
         width="24" 
         height="24" 
         viewBox="0 0 24 24" 
@@ -37,7 +37,7 @@
     <a href="http://twitter.com/CarlosZBent" target=__blank class="tw-icon">
         <svg 
         xmlns="http://www.w3.org/2000/svg" 
-        class="icon icon-tabler icon-tabler-brand-twitter" 
+        class="icon icon-tabler icon-tabler-brand-twitter dark:text-slate-300"
         width="24" 
         height="24" 
         viewBox="0 0 24 24" 
