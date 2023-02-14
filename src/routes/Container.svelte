@@ -11,13 +11,13 @@
   export let data: Platform[];
 </script>
 
-<div class="main-container flex flex-auto flex-col mx-auto gap-1 overflow-x-scroll max-h-[40em] w-full sm:min-w-[40%] md:w-[50%] my-2">
+<div class="main-container flex flex-auto flex-col mx-auto gap-1 overflow-x-scroll h-fit w-full sm:min-w-[40%] md:w-[55%] my-2">
   <h2 class="items-container-header flex-1 dark:text-white select-none">
     {title} ({amount})
   </h2>
   <hr class="border-emerald-400 w-[85%] mx-auto my-2 dark:border-emerald-800">
   
-  <div class="item-container flex flex-auto flex-col h-96 gap-2">
+  <div class="item-container flex flex-auto flex-col h-fit max-h-[47rem] gap-2">
     {#if amount==0}
     <span class="w-3/4 m-auto shadow-lg rounded-md mb-52 dark:bg-slate-800 bg-white p-5 py-6 dark:text-white">
       <p>
