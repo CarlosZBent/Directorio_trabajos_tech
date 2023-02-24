@@ -34,3 +34,15 @@ export function getKeyOfObj (key:string, obj:Object) {
     }
   }
 }
+
+export function roundInteger (num:number) {
+  if ( num % 10 == 0 ) {
+    return num
+  } else {
+    for (let i = 0; i < 10; i++) {
+      let r = num - i;
+      if ( r % 10 == 0 )
+        return r
+    }
+  }
+}

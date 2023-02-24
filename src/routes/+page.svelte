@@ -7,7 +7,7 @@
   import SocialLinkContainer from "./SocialLinkContainer.svelte";
   import SideBar from "./SideBar/SideBar.svelte";
   
-  import { iterateJSONData, getKeyOfObj } from "../helpers.js";
+  import { iterateJSONData, getKeyOfObj, roundInteger } from "../helpers.js";
   import { mixpanelWebsiteVisit } from "../analytics";
 
   interface MixpanelDataObject {
@@ -18,12 +18,14 @@
 
   let mixpanel_id = data.id;
 
-  let sectionLookup = {
+  let sectionLookup: Object = {
     "Plataformas para trabajo": iterateJSONData(Config.work),
     "Plataformas para freelancing": iterateJSONData(Config.freelancing),
     "Cuentas de Twitter": iterateJSONData(Config.twitter),
     "Canales y grupos de Telegram": iterateJSONData(Config.telegram)
   }
+
+  let totalNumberOfPlatforms: number = iterateJSONData(Config.work).length + iterateJSONData(Config.freelancing).length + iterateJSONData(Config.twitter).length + iterateJSONData(Config.telegram).length
   
 </script>
 
@@ -37,9 +39,9 @@
 </h1>
 
 <h2
-  class="text-center my-4 font-[Montserrat] text-xl mx-5 text-gray-500 mb-8"
+  class="text-center my-4 font-[Montserrat] text-xl mx-5 text-gray-600 dark:text-gray-500 mb-8"
   >
-  ¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para
+  ¿Quieres trabajar en la industria tech? Tenemos <b class="text-gray-700 dark:text-gray-400">más de { roundInteger(totalNumberOfPlatforms) } plataformas</b> para
   que encuentres tu próximo empleo
 </h2>
 
