@@ -5,7 +5,7 @@
     var toggleRotation:string = "90deg"
 </script>
 
-<div class="flex p-0 bg-slate-100 dark:bg-slate-800 absolute top-72 w-[17rem] transition-all duration-1200 ease-in-out shadow-md shadow-slate-300 dark:shadow-slate-900 rounded-tr-md rounded-br-md"
+<div class="flex p-0 bg-slate-100 dark:bg-slate-800 fixed top-72 w-[17rem] transition-all duration-1200 ease-in-out shadow-md shadow-slate-300 dark:shadow-slate-900 rounded-tr-md rounded-br-md"
     on:mouseover={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
     on:focus={ ()=> {containerLeft = "0rem"; toggleRotation="-90deg"}}
     on:mouseleave={ ()=> {containerLeft = "-14.5rem"; toggleRotation="90deg"}} 

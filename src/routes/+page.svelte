@@ -24,18 +24,19 @@
     "Cuentas de Twitter": iterateJSONData(Config.twitter),
     "Canales y grupos de Telegram": iterateJSONData(Config.telegram)
   }
-
+  
 </script>
+
 
 <div class="flex flex-auto flex-col bg-gray-200/30 dark:bg-gray-900">
   <h1
-    class="text-center mx-auto mb-5 mt-16 lg:text-5xl md:text-4xl text-4xl font-bold font-[Garet] dark:text-white"
-    use:mixpanelWebsiteVisit={mixpanel_id}
+  class="text-center mx-auto mb-5 mt-16 lg:text-5xl md:text-4xl text-4xl font-bold font-[Garet] dark:text-white"
+  use:mixpanelWebsiteVisit={mixpanel_id}
   >
-    Directorio de trabajos tech
-  </h1>
-  
-  <h2
+  Directorio de trabajos tech
+</h1>
+
+<h2
   class="text-center my-4 font-[Montserrat] text-xl mx-5 text-gray-500 mb-8"
   >
   ¿Quieres trabajar en la industria tech? Tenemos decenas de plataformas para
@@ -43,10 +44,11 @@
 </h2>
 
 <SocialLinkContainer />
+
 <SideBar />
 
-  <div class="mx-auto md:mx-20 gap-2">
-    <Container
+<div class="mx-auto md:mx-20 gap-2">
+  <Container
       title={ $activeSection }
       data={ sectionLookup[ getKeyOfObj($activeSection, sectionLookup) ] }
       amount={ sectionLookup[ getKeyOfObj($activeSection, sectionLookup) ].length }
